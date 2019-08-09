@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import Axios from 'axios';
 
 const UForm = ({ errors, touched, values, status }) => {
+    
     return (
         <div>
             <Form>
@@ -50,7 +51,10 @@ const FormicRegistrationForm = withFormik({
             .catch(err => {
                 console.log(err.response)
             })
-    }
+            
+    },
+    
+
 
 })(UForm)
 
