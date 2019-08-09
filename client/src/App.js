@@ -35,7 +35,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Registration Form</h1>
-        <FormicRegistrationForm />
+        <FormicRegistrationForm click={click}/>
         <GetCard apiData={this.state.apiData} />
       </div>
     );
