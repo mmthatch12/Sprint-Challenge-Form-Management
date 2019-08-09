@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Form, Field, withFormik } from 'formik';
 import * as Yup from 'yup';
 import Axios from 'axios';
 
-const UForm = ({ errors, touched, values, status }) => {
+const UForm = ({ errors, touched }) => {
     
     return (
         <div>
