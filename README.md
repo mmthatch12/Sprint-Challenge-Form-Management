@@ -25,26 +25,38 @@ In the challenge for this Sprint, you will demonstrate proficiency by creating a
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] What are the required parts of class components?
+    1.You need class x extends React.component
+    2.You must render the return statement
 
 - [ ] Name at least three lifecycle methods?
+    1. componentDidMount
+    2. componentDidUpdate
+    3. componentWillUnmount
 
 - [ ] Why are forms used so often in web applications and software?
 
+    They are a great way to collect user data.
+
 - [ ] What advantages are there by using a forms library like Formik?
 
+    These type of libraries are easier and more efficient, they can also handle state for us.
+
 - [ ] Why do we write tests for our apps?
+    
+    Tests can help bring up bugs faster, allows us to trust the code, acts as documentation for the code. It may not be faster up front but it can same a ton of time down the road.
+
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add PM as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add PM as collaborator on Github.
+- [ x] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [x ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
 
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [x ] Implement the project on this Branch, **committing progress & changes often.**
+- [x ] Push commits: `git push origin <firstName-lastName>`.
 - [ ] Navigate to the BE folder in this repository (this is where your server is located) from the command line, install the dependencies, and run `yarn start` or `npm start` to spin up the server provided for you.
 - [ ] In the terminal, navigate back to the main folder, then into the `client` folder.
 - [ ] Create your React app here.
