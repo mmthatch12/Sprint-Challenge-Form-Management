@@ -8,7 +8,6 @@ const UForm = ({ errors, touched, values, status }) => {
     return (
         <div>
             <Form>
-                <h1>Registration Form</h1>
 
                 <div>
                     <Field type='text' name='username' placeholder='Username' />

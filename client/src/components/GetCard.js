@@ -1,7 +1,6 @@
 import React from 'react';
 
 const GetCard = ({ apiData }) => {
-    console.log(apiData)
     return (
         apiData.map(thing => (
             <div>

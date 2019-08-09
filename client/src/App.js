@@ -34,6 +34,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Registration Form</h1>
         <FormicRegistrationForm />
         <GetCard apiData={this.state.apiData} />
       </div>
