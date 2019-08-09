@@ -16,6 +16,9 @@ const UForm = ({ errors, touched, values, status }) => {
                     )}
 
                     <Field type='password' name='password' placeholder='Password' />
+                    {touched.password && errors.password && (
+                        <p>{errors.password}</p>
+                    )}
 
                     <button type='submit'>Submit</button>
                 </div>
@@ -34,7 +37,7 @@ const FormicRegistrationForm = withFormik({
     },
 
     validationSchema: Yup.object().shape({
-        name: Yup.string().required('Username field is required'),
+        username: Yup.string().required('Username field is required'),
         password: Yup.string().min(5, 'Password must be 5 characters or longer').required('Password is required')
     }),
 
@@ -42,7 +45,6 @@ const FormicRegistrationForm = withFormik({
         Axios.post("http://localhost:5000/api/register", values)
             .then(res => {
                 console.log(res)
-                setStatus(res.data)
                 resetForm()
             })
             .catch(err => {
