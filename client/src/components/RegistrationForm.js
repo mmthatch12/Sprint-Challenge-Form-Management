@@ -43,9 +43,11 @@ const FormicRegistrationForm = withFormik({
     }),
 
     handleSubmit(values, { resetForm, setStatus }) {
+
         Axios.post("http://localhost:5000/api/register", values)
             .then(res => {
-                console.log(res)
+                console.log("post request", res.data)
+                setStatus(res.data)
                 resetForm()
             })
             .catch(err => {
