@@ -28,7 +28,12 @@ const FormicRegistrationForm = withFormik({
             password: password || ""
 
         }
-    }
+    },
+
+    validationSchema: Yup.object().shape({
+        name: Yup.string().required('Username field is required'),
+        password: Yup.string().min(5, 'Password must be 5 characters or longer').required('Password is required')
+    })
 })(Uform)
 
-export default UForm
+export default FormicRegistrationForm
