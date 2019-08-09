@@ -11,10 +11,18 @@ const UForm = () => {
 
                 <div>
                     <Field type='test' name='username' placeholder='Username />' />
+
+                    <Field type='password' name='password' placeholder='Password' />
+
+                    <button type='submit'>Submit</button>
                 </div>
             </Form>
         </div>
     )
 }
+
+const FormicRegistrationForm = withFormik({
+    
+})(Uform)
 
 export default UForm
